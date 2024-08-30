@@ -1,0 +1,67 @@
+{
+  "hash": "f5e4150b",
+  "configHash": "f00ab94f",
+  "lockfileHash": "25d5ac4f",
+  "browserHash": "317921b1",
+  "optimized": {
+    "@angular/animations": {
+      "src": "../../../../../node_modules/@angular/animations/fesm2022/animations.mjs",
+      "file": "@angular_animations.js",
+      "fileHash": "7f9ea241",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "13599bcc",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "d6efdfab",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "9f371897",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "d1e74147",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "1f59a36b",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "88b388a3",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-QDCDQ6LR": {
+      "file": "chunk-QDCDQ6LR.js"
+    },
+    "browser-UISCWE4L": {
+      "file": "browser-UISCWE4L.js"
+    },
+    "chunk-TTTXE2FT": {
+      "file": "chunk-TTTXE2FT.js"
+    },
+    "chunk-26ZBG2U3": {
+      "file": "chunk-26ZBG2U3.js"
+    },
+    "chunk-HZEFKQQ5": {
+      "file": "chunk-HZEFKQQ5.js"
+    }
+  }
+}
