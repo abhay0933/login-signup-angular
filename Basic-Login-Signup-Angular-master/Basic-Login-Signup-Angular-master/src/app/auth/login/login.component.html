@@ -1,0 +1,35 @@
+<div *ngIf="!isLoggedIn" class="flex flex-col justify-center w-full h-full items-center">
+  <div class="flex flex-col w-[75%] mx-auto">
+    <p class="text-xl font-bold mb-6 text-gray-700">Welcome Back!</p>
+
+    <label class="text-sm font-medium text-secondary mb-2" for="email">Enter Email ID</label>
+    <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Loremipsum@gmail.com"
+           [ngClass]="{'border-red-500': emailError}" 
+           class="p-3 mb-4 bg-gray-100 rounded-2xl w-[50%] focus:outline-none border-2" />
+    <p *ngIf="emailError" class="text-red-500 text-xs mb-2">Please enter a valid email.</p>
+
+    <label class="text-sm font-medium text-secondary mb-2" for="password">Enter Password</label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password"
+           [ngClass]="{'border-red-500': passwordError}" 
+           class="p-3 mb-4 bg-gray-100 rounded-2xl w-[50%] focus:outline-none border-2" />
+    <p *ngIf="passwordError" class="text-red-500 text-xs mb-2">Password is required.</p>
+
+    <button (click)="onLogin($event)" class="bg-blue-600 text-white p-3 rounded-2xl w-[50%] text-sm">Next</button>
+    <p *ngIf="errorMessage" class="text-red-500 mt-4">{{ errorMessage }}</p>
+
+    <p class="mt-4 text-gray-600 text-sm">
+      Don't have an account? 
+      <a (click)="navigateToSignUp()" class="text-blue-600 hover:underline cursor-pointer">Sign up</a>
+    </p>
+  </div>
+</div>
+
+<div *ngIf="isLoggedIn" class="flex flex-col justify-center items-center w-[60%] h-full gap-6 ml-[20%]">
+  <div class="w-[40%]">
+    <img src="https://i.ibb.co/gDB0vCf/Group-3835.png" alt="Success" class="w-full mb-4">
+  </div>
+  <div class="w-[80%] flex flex-col justify-center items-center">
+    <p class="text-[38px] font-sans font-semibold">Logging you in....</p>
+    <p class="text-gray-600 text-[18px]">Kindly wait as we are curating the data accordingly.</p>
+  </div>
+</div>
